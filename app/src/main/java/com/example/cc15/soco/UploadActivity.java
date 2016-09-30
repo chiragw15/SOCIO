@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class UploadActivity extends AppCompatActivity {
 
     FragmentUpload1 fragmentUpload1 = new FragmentUpload1();
     FragmentUpload2 fragmentUpload2 = new FragmentUpload2();
@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentUpload1, "Tag").addToBackStack(null).commit();
-        }
+        //if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().add(R.id.container, fragmentUpload1, "Tag").commit();
+        //}
     }
 
 
