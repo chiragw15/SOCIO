@@ -3,11 +3,16 @@ package com.example.cc15.soco;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class HomeActivity extends AppCompatActivity {
+
+    //private SectionsPagerAdapter mSectionsPagerAdapter;
+
+    private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,10 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
     }
 
 }
+
