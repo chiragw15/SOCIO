@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:editable="true"
+            android:focusable="true"
+            android:hint="Write Something..."
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:autoText="false"
+            android:gravity="start" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="#c8c4c4">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/photocamera"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/videocamera"/>
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:text="Next >"
+           android:textColor="@color/colorPrimary"
+           android:textSize="26sp"
+           android:typeface="sans"
+           android:textAlignment="center"
+           android:id="@+id/next_button1"/>
+
+    </LinearLayout>
+</LinearLayout>
