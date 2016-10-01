@@ -4,46 +4,52 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:id="@+id/userInfo"
-    android:orientation="horizontal"
-    android:weightSum="1">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="180dp"
-        android:orientation="vertical">
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_marginTop="25dp"
-            android:layout_gravity="center"
-            android:src="@drawable/default_profile_picture"
-            android:layout_height="80dp"
-            />
-        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.92"
+        android:id="@+id/userInfo"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Arinjaya   "
-            android:layout_marginLeft="16dp"
-            android:textSize="20dp"
-            android:layout_marginTop="35dp"
-            android:textColor="#000000"
-            />
-    </LinearLayout>
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/default_profile_picture"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arinjaya"
+                android:layout_marginLeft="0dp"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#00aced"
+
+                />
+
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="19dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"
-                android:id="@+id/numbers">
+                android:id="@+id/numbers"
+                android:paddingTop="0dp">
 
                 <TextView
                     android:layout_width="0dp"
@@ -52,7 +58,7 @@
                     android:id="@+id/number_post"
                     android:text="5"
                     android:gravity="center"
-                    android:textSize="35dp"
+                    android:textSize="25dp"
                     android:textColor="#000000"
                     />
 
@@ -63,7 +69,7 @@
                     android:id="@+id/number_followers"
                     android:text="65"
                     android:gravity="center"
-                    android:textSize="35dp"
+                    android:textSize="25dp"
                     android:textColor="#000000"/>
                 <TextView
                     android:layout_width="0dp"
@@ -72,7 +78,7 @@
                     android:id="@+id/number_followed"
                     android:text="48"
                     android:gravity="center"
-                    android:textSize="35dp"
+                    android:textSize="25dp"
                     android:textColor="#000000"/>
 
             </LinearLayout>
@@ -88,16 +94,16 @@
                     android:layout_weight="1"
                     android:id="@+id/placeholder_posts"
                     android:text="Posts"
-                    android:gravity="center"
-                    android:textSize="17dp"/>
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:id="@+id/placeholder_followers"
                     android:text="Followers"
-                    android:gravity="center"
-                    android:textSize="17dp"/>
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -105,40 +111,48 @@
                     android:layout_weight="1"
                     android:id="@+id/placeholder_followed"
                     android:text="Followed"
-                    android:gravity="center"
-                    android:textSize="17dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"
                     />
 
             </LinearLayout>
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
                 android:text="Edit Your Profile"
+                android:layout_gravity="center"
                 android:id="@+id/edit_profile_button"/>
 
         </LinearLayout>
-</LinearLayout>
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="2"
-    android:orientation="vertical"
-    android:id="@+id/events_and_posts">
-    <TextView
+    </LinearLayout>
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Your Past Events"
-        android:gravity="center"
-        android:textSize="35dp"
-        android:layout_marginTop="16dp"
-        android:textColor="#000000"/>
-    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/list"
+        android:layout_height="2dp"
+        android:background="#000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="113"
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:id="@+id/events_and_posts"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Past Events"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000"
+            />
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
-</LinearLayout>
+    </LinearLayout>
 </LinearLayout>
