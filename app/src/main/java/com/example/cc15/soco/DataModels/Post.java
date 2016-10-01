@@ -9,8 +9,27 @@ public class Post {
 
     private String mName;
 
-    public Post(String name) {
+    public String getmDescription() {
+        return mDescription;
+    }
+
+    public void setmDescription(String mDescription) {
+        this.mDescription = mDescription;
+    }
+
+    public String getmName() {
+        return mName;
+    }
+
+    public void setmName(String mName) {
+        this.mName = mName;
+    }
+
+    private String mDescription;
+
+    public Post(String name, String mDescription) {
         mName = name;
+        this.mDescription = mDescription;
     }
 
     public String getName() {
@@ -21,6 +40,12 @@ public class Post {
         mName = name;
     }
 
+    public String getDescription() {
+        return mDescription;
+    }
+
+    public void setDescription(String description) { this.mDescription = description; }
+
 
 
     private static int lastPostId = 0;
@@ -28,7 +53,7 @@ public class Post {
         ArrayList<Post> contacts = new ArrayList<Post>();
 
         for (int i = 1; i <= numContacts; i++) {
-            contacts.add(new Post("Person " + ++lastPostId));
+            contacts.add(new Post("Person " + ++lastPostId,"HELLO"));
         }
 
         return contacts;

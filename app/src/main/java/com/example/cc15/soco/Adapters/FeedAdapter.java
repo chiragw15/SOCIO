@@ -36,10 +36,19 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         private TextView label1, label2;
 
+        public TextView getTyrion() {
+            return tyrion;
+        }
+
+        private TextView tyrion;
+
+
         public ViewHolderText(final View itemView) {
             super(itemView);
             this.label1 = (TextView) itemView.findViewById(R.id.text1);
             this.label2 = (TextView) itemView.findViewById(R.id.text2);
+            this.tyrion = (TextView) itemView.findViewById(R.id.tryion);
+//            tryionxt(label1.get.setTeText());
             // Setup the click listener
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -71,12 +80,23 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         public void setLabel2(TextView label2) {
             this.label2 = label2;
         }
+
+        public void setTyrion(TextView tyrion) {this.tyrion = tyrion;}
     }
 
     public static class ViewHolderImage extends RecyclerView.ViewHolder {
 
         private ImageView ivExample;
 
+        public int getC() {
+            return c;
+        }
+
+        public void setC(int c) {
+            this.c = c;
+        }
+
+        private int c=0;
         public ViewHolderImage(final View itemView) {
             super(itemView);
             ivExample = (ImageView) itemView.findViewById(R.id.ivExample1);
@@ -141,11 +161,15 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         switch (viewType) {
             case POST_TEXT:
                 View v1 = inflater.inflate(R.layout.view_holder_text, viewGroup, false);
+
                 viewHolder = new ViewHolderText(v1);
                 break;
             case POST_IMAGE:
                 View v2 = inflater.inflate(R.layout.view_holder_img, viewGroup, false);
                 viewHolder = new ViewHolderImage(v2);
+
+
+
                 break;
             default:
                 View v = inflater.inflate(android.R.layout.simple_list_item_1, viewGroup, false);
@@ -176,14 +200,24 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private void configureViewHolder1(ViewHolderText vh1, int position) {
         Post post = (Post) items.get(position);
         if (post != null) {
-            vh1.getLabel1().setText("Name: " + post.getName());
-//            vh1.getLabel2().setText("Hometown: " + user.hometown);
+
+            vh1.getTyrion().setText(post.getName());
+            vh1.getLabel2().setText("Description : " + post.getDescription());
         }
     }
-
+    static int count=-1;
     private void configureViewHolder2(ViewHolderImage vh2) {
-        vh2.getImageView().setImageResource(R.drawable.binder3);
+       int x = vh2.getC();
+        if(x==0) {
+            vh2.getImageView().setImageResource(R.drawable.bikestunt);
+            vh2.setC(1);
+        }
+        else
+           vh2.getImageView().setImageResource(R.drawable.potholes);
+
+
     }
+
 
 
 

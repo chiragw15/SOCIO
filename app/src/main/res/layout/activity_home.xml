@@ -29,9 +29,9 @@
             android:paddingLeft="15dp" >
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/power"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/logo"
                 android:layout_gravity="left"
                 android:layout_marginRight="20dp"/>
 

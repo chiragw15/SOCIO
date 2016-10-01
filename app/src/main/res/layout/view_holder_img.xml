@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_margin="12dp"
+    android:layout_margin="5dp"
     android:elevation="10dp"
     app:cardBackgroundColor="#ffffff"
     app:cardCornerRadius="4dp">
@@ -22,9 +22,9 @@
                       android:paddingEnd="12dp">
             <ImageView
                 android:layout_marginTop="5dp"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@drawable/default_profile_picture"/>
 
             <TextView android:layout_width="wrap_content"
                       android:layout_height="match_parent"

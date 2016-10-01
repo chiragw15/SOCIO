@@ -63,6 +63,8 @@ public class FragmentUpload2 extends Fragment {
             @Override
             public void onTagClick(int position, String text) {
                 // ...
+
+                //mTagContainerLayout.
                 mTagContainerLayout2.addTag(text);
 
             }
