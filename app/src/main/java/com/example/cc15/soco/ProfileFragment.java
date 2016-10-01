@@ -1,6 +1,7 @@
 package com.example.cc15.soco;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +10,10 @@ import android.view.ViewGroup;
  * Created by ArinjayaKhare1 on 02-10-2016.
  */
 
-public class ProfileFragment extends android.support.v4.app.Fragment {
+public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view= inflater.inflate(R.layout.profile_layout, container, false);
+        View view= inflater.inflate(R.layout.user_profile, container, false);
         //ViewPager viewPager = (ViewPager) view.findViewById(R.id.viewpager);
 
         // Create an adapter that knows which fragment should be shown on each page

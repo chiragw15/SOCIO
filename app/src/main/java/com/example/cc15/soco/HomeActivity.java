@@ -85,7 +85,7 @@ public class HomeActivity extends AppCompatActivity {
                 case 1:
                     return new FragmentUpload1();
                 case 2:
-                    return new FragmentUpload2();
+                    return new ProfileFragment();
             }
             return null;
         }
