@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -17,6 +18,20 @@ public class FragmentUpload2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.upload2_fragment, container, false);
+        TextView tagPeople = (TextView)view.findViewById(R.id.tagPeople);
+        tagPeople.setOnClickListener(
+                new Button.OnClickListener(){
+
+                    @Override
+                    public void onClick(View view) {
+                        CustomDialogClass cdd=new CustomDialogClass(getActivity());
+                        cdd.show();
+                    }
+                }
+        );
+
+
+
         return view;
     }
 }
