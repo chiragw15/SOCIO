@@ -47,13 +47,18 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/photocamera"/>
+            android:src="@drawable/photocamera"
+            android:id="@+id/camera"
+            />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/videocamera"/>
+            android:src="@drawable/videocamera"
+            android:id="@+id/video"
+
+            />
 
        <TextView
            android:layout_width="0dp"

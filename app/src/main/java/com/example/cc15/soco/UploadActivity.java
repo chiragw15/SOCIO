@@ -1,21 +1,15 @@
 package com.example.cc15.soco;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.TextView;
 
 public class UploadActivity extends AppCompatActivity {
 
     FragmentUpload1 fragmentUpload1 = new FragmentUpload1();
     FragmentUpload2 fragmentUpload2 = new FragmentUpload2();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +19,7 @@ public class UploadActivity extends AppCompatActivity {
         //if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().add(R.id.container, fragmentUpload1, "Tag").commit();
         //}
+
     }
 
 

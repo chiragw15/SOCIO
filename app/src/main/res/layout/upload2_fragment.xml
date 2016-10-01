@@ -46,7 +46,9 @@
                 android:textColor="#000"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                android:layout_marginBottom="5dp"/>
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tagPeople"
+                />
 
 
             <!--<EditText-->
