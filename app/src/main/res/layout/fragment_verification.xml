@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:text="Verification Info"
+        android:textSize="25sp"
+        android:layout_marginBottom="40sp"/>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textview_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:paddingTop="5sp"
+            android:text="Mobile Number"
+            />
+        <EditText
+            android:paddingTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/textview_mobile"
+            android:id="@+id/edittext_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edittext"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+
+            android:hint="MOBILE NUMBER "/>
+
+        <Button
+            android:layout_below="@+id/textview_mobile"
+            android:layout_toRightOf="@+id/edittext_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#007DEF"
+            android:textColor="#f2f4f5"
+            android:text="Verify"/>
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:text="An OTP will be sent to the number for verification"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/textview_email"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:paddingTop="5sp"
+        android:text="Email Address"
+        />
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/edittext_email"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal"
+
+        android:hint="EMAIL ADDRESS"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textview_choose_password"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+
+
+        android:paddingTop="5sp"
+        android:text="Choose Password"
+        />
+    <EditText
+
+        android:layout_gravity="center"
+        android:id="@+id/edittext_password"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal"
+
+        android:inputType="textPassword"
+        android:hint="CHOOSE PASSWORD"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textview_confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+
+        android:paddingTop="5sp"
+        android:text="Confirm Password"
+        />
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/edittext_confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal"
+
+        android:inputType="textPassword"
+        android:hint="CONFIRM PASSWORD"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="20sp"
+        android:layout_width="238sp"
+        android:layout_height="20sp"
+        android:layout_gravity="center">
+        <TextView
+            android:paddingLeft="20sp"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="I accept"/>
+        <TextView
+            android:id="@+id/textview_signup"
+            android:paddingLeft="5sp"
+            android:layout_toRightOf="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="terms &amp; conditions"
+            android:textStyle="bold"
+            android:textColor="#00C8FF"/>
+
+    </RelativeLayout>
+
+
+    <Button
+    android:layout_gravity="center"
+    android:layout_below="@+id/edittext_password"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/signupBtn"
+    android:layout_width="238sp"
+    android:layout_height="50sp"
+    android:background="#007DEF"
+    android:text="Sign Up"
+    android:textColor="#f2f4f5"
+
+    android:layout_marginTop="20sp"
+    />
+
+
+</LinearLayout>
