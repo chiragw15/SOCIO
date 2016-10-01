@@ -116,9 +116,13 @@ public class HomeActivity extends AppCompatActivity {
                 rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
             }
-            else
+            else if(getArguments().getInt(ARG_SECTION_NUMBER)==2)
             {
                 rootView = inflater.inflate(R.layout.fragment_home, container, false);
+            }
+            else
+            {
+                rootView = inflater.inflate(R.layout.user_profile, container, false);
             }
             return rootView;
         }
